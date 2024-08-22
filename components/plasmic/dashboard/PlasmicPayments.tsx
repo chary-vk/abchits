@@ -179,7 +179,6 @@ function PlasmicPayments__RenderFunc(props: {
     $queries: $queries,
     $refs
   });
-  const dataSourcesCtx = usePlasmicDataSourceContext();
 
   const new$Queries: Record<string, ReturnType<typeof usePlasmicDataOp>> = {
     query: usePlasmicDataOp(() => {
@@ -489,23 +488,6 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   return func;
 }
 
-function withPlasmicPageGuard<P extends object>(
-  WrappedComponent: React.ComponentType<P>
-) {
-  const PageGuard: React.FC<P> = props => (
-    <PlasmicPageGuard__
-      minRole={"28d7ddc2-bd84-410b-9de2-3e2907ca1536"}
-      appId={"2DKD84fhiXnEWTgFaJV5wH"}
-      authorizeEndpoint={"https://studio.plasmic.app/authorize"}
-      canTriggerLogin={true}
-    >
-      <WrappedComponent {...props} />
-    </PlasmicPageGuard__>
-  );
-
-  return PageGuard;
-}
-
 function withUsePlasmicAuth<P extends object>(
   WrappedComponent: React.ComponentType<P>
 ) {
@@ -533,7 +515,7 @@ function withUsePlasmicAuth<P extends object>(
 
 export const PlasmicPayments = Object.assign(
   // Top-level PlasmicPayments renders the root element
-  withUsePlasmicAuth(withPlasmicPageGuard(makeNodeComponent("root"))),
+  withUsePlasmicAuth(makeNodeComponent("root")),
   {
     // Helper components rendering sub-elements
     pageLayout: makeNodeComponent("pageLayout"),

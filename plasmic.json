@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -109,7 +109,8 @@
           "componentImportPath": "@plasmicpkgs/radix-ui"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "kS7YGZfVr6mU43XDQjXELc",
@@ -131,7 +132,8 @@
           "componentImportPath": "@plasmicpkgs/react-chartjs-2"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "9Vr5YWkf3w7jj6SsTcCEta",
@@ -153,7 +155,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jkU633o1Cz7HrJdwdxhVHk",
@@ -207,7 +210,8 @@
           }
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -607,7 +611,8 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "2DKD84fhiXnEWTgFaJV5wH",
@@ -616,20 +621,6 @@
       "version": "latest",
       "cssFilePath": "plasmic/dashboard/plasmic.module.css",
       "components": [
-        {
-          "id": "hrsmqgEU8urw",
-          "name": "MonthOverview",
-          "type": "managed",
-          "projectId": "2DKD84fhiXnEWTgFaJV5wH",
-          "renderModuleFilePath": "plasmic/dashboard/PlasmicMonthOverview.tsx",
-          "importSpec": {
-            "modulePath": "../pages/month-overview.tsx"
-          },
-          "cssFilePath": "plasmic/dashboard/PlasmicMonthOverview.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/month-overview"
-        },
         {
           "id": "rGQpmhEfHPE7",
           "name": "PageLayout",
@@ -655,34 +646,6 @@
           "cssFilePath": "plasmic/dashboard/PlasmicStatistic.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "v-1rUs7o71ZS",
-          "name": "Product",
-          "type": "managed",
-          "projectId": "2DKD84fhiXnEWTgFaJV5wH",
-          "renderModuleFilePath": "plasmic/dashboard/PlasmicProduct.tsx",
-          "importSpec": {
-            "modulePath": "../pages/product-insights.tsx"
-          },
-          "cssFilePath": "plasmic/dashboard/PlasmicProduct.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/product-insights"
-        },
-        {
-          "id": "NjtSgtUO-sHE",
-          "name": "BusinessMetrics",
-          "type": "managed",
-          "projectId": "2DKD84fhiXnEWTgFaJV5wH",
-          "renderModuleFilePath": "plasmic/dashboard/PlasmicBusinessMetrics.tsx",
-          "importSpec": {
-            "modulePath": "../pages/business-metrics.tsx"
-          },
-          "cssFilePath": "plasmic/dashboard/PlasmicBusinessMetrics.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/business-metrics"
         },
         {
           "id": "EKQcF2eTIcLL",
@@ -730,7 +693,7 @@
           "projectId": "2DKD84fhiXnEWTgFaJV5wH",
           "renderModuleFilePath": "plasmic/dashboard/PlasmicCustomers.tsx",
           "importSpec": {
-            "modulePath": "../pages/new-page.tsx"
+            "modulePath": "../pages/index.tsx"
           },
           "cssFilePath": "plasmic/dashboard/PlasmicCustomers.module.css",
           "scheme": "blackbox",

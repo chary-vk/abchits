@@ -347,7 +347,7 @@ function PlasmicAddCustomer__RenderFunc(props: {
 
                       $steps["goToCustomers"] = true
                         ? (() => {
-                            const actionArgs = { destination: `/new-page` };
+                            const actionArgs = { destination: `/` };
                             return (({ destination }) => {
                               if (
                                 typeof destination === "string" &&

@@ -156,7 +156,7 @@ function PlasmicPageLayout__RenderFunc(props: {
           { path: null, name: null },
           { path: null, name: null }
         ];
-        __composite["0"]["path"] = `/new-page`;
+        __composite["0"]["path"] = `/`;
         __composite["0"]["name"] = "Customers";
         __composite["1"]["path"] = `/payments`;
         __composite["1"]["name"] = "Payments";
