@@ -6,7 +6,7 @@ First, run the development server:
 
 ```bash
 npm run dev
-```
+``` hello
 
 Open your browser to see the result.
 
